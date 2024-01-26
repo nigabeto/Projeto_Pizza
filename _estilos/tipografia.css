@@ -96,7 +96,6 @@ header div#chamada a {
     animation-delay: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
-
 }
 
 /*FOOTER*/
@@ -114,7 +113,6 @@ footer div#info li {
 /*PROMOÇÕES*/
 div.pontos-chaves h4 {
     color: black;
-
 }
 
 div.pontos-chaves h4:after {
@@ -125,6 +123,21 @@ div.pontos-chaves h4:after {
     margin: 20px auto 10px;
     content: "  ";
 }
+
 /*PROMÇÃO CARROSSEL*/
+
+/*SECAO CARDAPIO*/
+
+section#pizza p.destaque {
+    color: white;
+    width: 40%;
+}
+
+section#pizza ul li {
+    color: white;
+    list-style: none;
+    line-height: 1.9;
+    font-size: 90%;
+}
 
 
