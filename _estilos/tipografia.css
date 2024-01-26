@@ -20,7 +20,7 @@ CINZA CLARO: #F7F7F7
 }
 
 h1, h2, h3 {
-    font-family: 'Fredericka the Great', serif;
+    font-family: 'Fredericka the Great', serif, cursive;
     text-align: center;
     text-transform: uppercase;
     color: #D90404;
@@ -66,12 +66,20 @@ p.destaque {
 header div#chamada h1 {
     color: white;
     text-shadow: 4px 6px 12px #000;
+    animation-name: HeaderH1-moverParaDireta;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 header div#chamada h4 {
     font-size: 250%;
     margin-bottom: 55px;
     text-shadow: 4px 6px 12px #000;
+    animation-name: HeaderH1-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
 }
 
 header div#chamada a {
@@ -80,14 +88,21 @@ header div#chamada a {
     text-decoration: none;
     font-weight: 600;
     padding: 20px 80px;
+    display: inline-block;
     border-radius: 50px;
     background: linear-gradient(rgba(7, 140, 49, 55) 0%, rgba(6, 89, 2, 35) 50%, rgba(6, 89, 2, 35) 100%);
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+
 }
 
 /*FOOTER*/
 footer div#info ul {
     margin-left: 15px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 footer div#info li {

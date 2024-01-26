@@ -65,7 +65,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #D90404;
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 100px;
@@ -111,6 +111,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    border-bottom: 10px solid #F03733;
 }
 
 footer div#mapa {
@@ -128,12 +129,23 @@ footer div#info {
 }
 
 footer div#redes-sociais {
-    margin-left: 15px;
-    width: 80%;
+
+    width: 100%;
     height: 70px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+
+footer div#redes-sociais ion-icon {
+    color: white;
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+}
+
+footer div#redes-sociais ion-icon:hover {
+    color: #F2B705;
 }
 
 footer div#pizza-decoracao {
@@ -149,7 +161,7 @@ footer div#pizza-decoracao {
 
 section#domingo-perfeito {
     width: 100%;
-    padding: 40px 0 80px;
+    padding: 0 0 80px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -237,21 +249,20 @@ div.pontos-chaves {
     width: 25%;
 
 }
+
 /*PROMOÇÃO CARROSSEL*/
 
 section#promocao {
     width: 100%;
     padding: 40px 0 80px;
-    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,1)), url("../_imagens/background-secao-promocao.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("../_imagens/background-secao-promocao.png");
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-
-
-
 }
+
 div#promocao-mestre {
     width: 100%;
     height: 300px;
@@ -262,20 +273,24 @@ div#promocao-mestre {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
 div#promocao-esquerda, div#promocao-direita {
     width: 15%;
     height: 300px;
     cursor: pointer;
 
 }
-div#promocao-mestre img {
+
+div#promocao-mestre ion-icon {
     width: 70%;
     height: 70%;
     color: #F03733;
 }
-div#promocao-esquerda img {
+
+div#promocao-esquerda ion-icon {
     opacity: 0.5;
 }
+
 div#promocao-centro {
     width: 70%;
     margin: 0 auto;
@@ -285,11 +300,13 @@ div#promocao-centro {
     max-width: 1010px;
     overflow: hidden;
 }
+
 div#promocoes {
     position: absolute;
     left: 0;
     width: 2680px;
 }
+
 section#promocao div#promocao-centro div#promocoes ul {
     display: inline-table;
     width: 300px;
@@ -300,24 +317,28 @@ section#promocao div#promocao-centro div#promocoes ul {
     border: 1px solid #ccc;
     text-align: center;
 }
+
 section#promocao div#promocao-centro div#promocoes ul li {
     list-style: none;
     display: inline-table;
     width: 90%;
     margin: 0;
 }
+
 section#promocao div#promocao-centro div#promocoes ul p {
     line-height: 1.5;
     color: #404040;
     font-size: 90%;
 }
+
 section#promocao div#promocao-centro div#promocoes ul h5 {
     font-size: 120%;
 }
+
 section#promocao div#promocao-centro div#promocoes ul img {
-    width: 40%;
+    width: 60%;
     border-radius: 100%;
-    margin-top: -80px;
+    margin-top: -70px;
     margin-bottom: 20px;
     border: 5px solid #f03733;
 
